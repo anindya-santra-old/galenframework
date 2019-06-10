@@ -1,0 +1,69 @@
+{
+  "testId" : "1-test-automation-using-galen-framework",
+  "name" : "Test Automation Using Galen Framework",
+  "report" : {
+    "nodes" : [ {
+      "name" : "Verify logo present and log image comparison",
+      "status" : "info",
+      "time" : 1560159013224,
+      "includedTags" : [ "desktop" ],
+      "excludedTags" : [ ],
+      "sections" : [ {
+        "name" : "Main Section",
+        "place" : {
+          "filePath" : "src/main/resources/specs/costcotravel-home.gspec",
+          "lineNumber" : 5
+        },
+        "objects" : [ {
+          "name" : "costco_logo",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/main/resources/specs/costcotravel-home.gspec",
+              "lineNumber" : 8
+            },
+            "name" : "visible",
+            "highlight" : [ "costco_logo" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/main/resources/specs/costcotravel-home.gspec",
+              "lineNumber" : 9
+            },
+            "name" : "image file costco-travel-logo.png, error 1500",
+            "highlight" : [ "costco_logo" ]
+          } ]
+        }, {
+          "name" : "utility_links",
+          "specs" : [ {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/main/resources/specs/costcotravel-home.gspec",
+              "lineNumber" : 12
+            },
+            "name" : "css font-weight is \"300\"",
+            "highlight" : [ "utility_links" ]
+          }, {
+            "status" : "info",
+            "place" : {
+              "filePath" : "src/main/resources/specs/costcotravel-home.gspec",
+              "lineNumber" : 13
+            },
+            "name" : "css display is \"block\"",
+            "highlight" : [ "utility_links" ]
+          } ]
+        } ]
+      } ],
+      "objects" : {
+        "utility_links" : {
+          "area" : [ 526, 0, 648, 38 ]
+        },
+        "costco_logo" : {
+          "area" : [ 174, 0, 201, 100 ]
+        }
+      },
+      "screenshot" : "layout-1-screenshot.png",
+      "type" : "layout"
+    } ]
+  }
+}

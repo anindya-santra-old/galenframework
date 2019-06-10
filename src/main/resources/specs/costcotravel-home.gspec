@@ -1,0 +1,13 @@
+@objects
+	costco_logo		xpath	//a[@class='logo']//img[1]
+	utility_links	xpath	//div[@class='utility-links']
+
+=Main Section=
+	@on desktop
+		costco_logo:
+			visible
+			image file costco-travel-logo.png, error 1500
+
+		utility_links:
+			css font-weight is "300"
+			css display is "block"
